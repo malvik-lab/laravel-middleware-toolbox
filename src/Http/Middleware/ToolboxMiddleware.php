@@ -13,8 +13,11 @@ class ToolboxMiddleware
     {
         $config = config('malviklab-laravel-middleware-toolbox');
 
-        if ( array_key_exists('acceptOnly', $config) )
-        {
+        if (
+            array_key_exists('acceptOnly', $config) &&
+            !is_null($config['acceptOnly']) &&
+            '' !== $config['acceptOnly']
+        ) {
             $exec = AcceptOnlyAction::exec($request, [
                 'acceptOnly' => $config['acceptOnly']
             ]);
