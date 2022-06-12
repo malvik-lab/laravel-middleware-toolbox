@@ -1,0 +1,30 @@
+{
+    "name": "malvik-lab/laravel-middleware-toolbox",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vittorio Malaspina",
+            "email": "vittorio.malaspina@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MalvikLab\\Laravel\\MiddlewareToolbox\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MalvikLab\\Laravel\\MiddlewareToolbox\\Providers\\MiddlewareToolboxServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
