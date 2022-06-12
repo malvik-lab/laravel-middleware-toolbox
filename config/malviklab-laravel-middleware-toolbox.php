@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'acceptOnly' => null,
+    'accept' => null,
+    'contentType' => null,
     'setFields' => [
-
     ],
 ];
