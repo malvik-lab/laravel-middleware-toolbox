@@ -4,7 +4,7 @@ namespace MalvikLab\Laravel\MiddlewareToolbox\Http\Middleware\Actions;
 
 use Illuminate\Http\Request;
 
-class ContentType implements ActionInterface
+class ContentTypeAction implements ActionInterface
 {
     public static function exec(Request $request, array $config)
     {
