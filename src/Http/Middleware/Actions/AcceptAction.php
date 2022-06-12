@@ -4,7 +4,7 @@ namespace MalvikLab\Laravel\MiddlewareToolbox\Http\Middleware\Actions;
 
 use Illuminate\Http\Request;
 
-class AcceptOnlyAction implements ActionInterface
+class AcceptAction implements ActionInterface
 {
     public static function exec(Request $request, array $config)
     {
